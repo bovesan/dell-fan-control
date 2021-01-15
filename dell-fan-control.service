@@ -1,0 +1,9 @@
+[Unit]
+Description=Dell fan control
+
+[Service]
+ExecStart=dell-fan-control.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
